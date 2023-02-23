@@ -1,0 +1,6 @@
+print("Hola y bienvenidos a mi tutorial interactivo.")
+name = input("Tu nombre: ")
+age = int(input("Tu edad: "))
+city = input("¿Dónde vives?")
+email = input("Por favor, introduzca su dirección de correo electrónico: ")
+print("Muchas gracias,",(name),"se le contactará en",(email))
