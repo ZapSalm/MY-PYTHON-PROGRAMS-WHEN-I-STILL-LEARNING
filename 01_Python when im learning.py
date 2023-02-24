@@ -46,5 +46,42 @@ print("Hola soy Angel " * int(my_float))
 #Porque funciona? porque transformamos 5.0 siendo float, a entero, entonces seria 5, y ahora si podria ejecutar las 5 veces "Hola soy Angel" !
 
 ###OPERADORES COMPARATIVOS###
+#Mayor que
+print(3>4) 
+#Menor que
+print(3<4)
+#Mayor o igual
+print(3>=4)
+#Menor o igual
+print(3<=4)
+#Si hay igualdad
+print(3==4)
+#Distinto a
+print(3!=4)
 
-NEXT TIME
+#CON STRS (Compara en un orden alfabetico por ASCII) (No cuenta caracteres)
+
+#Mayor que
+print("Hola">"Python") 
+#Menor que
+print("Hola"<"Python")
+#Mayor o igual
+print("Hola">="Python")
+#Menor o igual
+print("Hola"<="Python")
+#Si hay igualdad
+print("Hola"=="Python")
+#Distinto a
+print("Hola"!="Python")
+
+#Porque para contar caracteres se le tiene que poner len al inicio para que cuente los caracteres, ejemplo:
+print(len("Hola")>=len("Python"))
+#Hola no es mayor a Python, porque Hola, tiene 4 caracteres y python tiene 6, por lo tanto es False.
+
+### OPERADORES LOGICOS (REPASARLO, BASTANTE COMPLEJO, Y TAMBIEN REPASAR LAS TABLAS DE VERDAD!!!!)### 
+
+print(3>4 and "Hola">"Python") 
+print(3>4 or "Hola">"Python") 
+#Or compara la logica booleana entre 2 operadores (en este caso), con que uno de los 2 sea true, sera true.
+print(not(3>4))
+#Not sive para negar toda la condicion
