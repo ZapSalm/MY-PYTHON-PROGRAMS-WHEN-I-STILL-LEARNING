@@ -85,3 +85,66 @@ print(3>4 or "Hola">"Python")
 #Or compara la logica booleana entre 2 operadores (en este caso), con que uno de los 2 sea true, sera true.
 print(not(3>4))
 #Not sive para negar toda la condicion
+
+#FORMATTING OR GIVE FORMAT
+
+name, surname, age = "Angel", "Salmeron", 19
+
+print("Mi nombre es {} {} y mi edad es {}".format(name,surname,age))
+print("My name is {} {} and my age is {}".format(name,surname,age))
+print("Mi nombre es %s %s y mi edad es %d" %(name,surname,age))
+print("My name is %s %s and my age is %d" %(name,surname,age))
+
+#Se usa Llaves si tal cual quieres que imprima el objeto, y %s o %d o %f si se esta trabajando con el objeto formateado.
+# %s is for strs and %d is for a number
+# f is used before "" in a str and the variables are in {} and make it this:
+# ex: print(f"Hi my name is {name}, and my age is {age}")
+# or f"Hi my name is {name}, and my age is {age}"
+
+print(f"Mi nombre es {name} {surname} y mi edad es {age}")
+
+# UNPACKING CHARACTERS
+language = "python"
+a,b,c,d,e,f= language
+print(a)
+print(b)
+
+#Division
+
+language_slice= language[1:3]
+print(language_slice)
+
+language_slice= language[1:]
+print(language_slice)
+
+language_slice= language[-2]
+print(language_slice)
+
+#no funciona asi:
+
+language_slice= language[1:2:4]
+print(language_slice)
+
+# Reverse
+
+Reversed_language = language[::-1]
+print(Reversed_language)
+
+#System Function
+
+print(language.capitalize())
+print(language.upper())
+#Is counting the t, for example
+print(language.count("t"))
+#result: 1, because python have a 1 t
+print(language.isnumeric())
+print("1".isnumeric())
+print(language.lower())
+print(language.upper().isupper())
+print(language.upper().islower())
+print(language.startswith("py"))
+print(language.startswith("Py"))
+print("py" == "Py") #Is not the same, false in this case
+
+
+
